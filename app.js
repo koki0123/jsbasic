@@ -56,9 +56,67 @@ console.log(`私の所属先は${schoolName}です`)
 // console.logで出力
 console.log(100 * 3 * 1.1);
 
-let amount = (100 * 3 * 1.1);
-console.log(amount);
+// let amount = (100 * 3 * 1.1);
+// console.log(amount);
 
-let amount = 390 * 1.08;
-let amount2 = 390 * 1.1;
-console.log((amount2 - amount) * 12);
+// let amount = 390 * 1.08;
+// let amount2 = 390 * 1.1;
+// console.log((amount2 - amount) * 12);
+
+console.log('----------------条件分岐----------------');
+let int = 3;
+
+// 比較演算子 < <= > > === !==
+// 値と型
+// 文字列
+// 整数
+// 小数点
+// true or false
+// ==と===の違いは文字と数字を識別するとき
+// ==!は等しくないとき
+
+if (int === '3') {
+  console.log(`${int}は3より大きいです。`)
+}
+
+// 論理演算子
+// && ||
+console.log('else if-----------');
+int = 5 ;
+if (int >=10) {
+  console.jog(int + `は１０以上です`)
+}　else if (int > 3) {
+  console.log(`${int}は３より大きいです。`);
+}
+else {
+  console.log(`${int}は３以下です。`)
+}
+
+// switch
+// 終了時には必ずbreak
+// コロン
+console.log(`switch-----------`);
+let signal='red';
+switch(signal) {
+  case 'red':
+    console.log('止まれ');
+    break;
+  case 'green':
+    console.log('進め')
+  default:
+    console.log('その他')
+    break
+}
+
+// 分岐が多いときはswitch,少ないときはif
+
+// 変数を準備、3で割り切れる数のときはBuzz,
+// それ以外の時は変数をそのままconsole.log
+
+let number = 6;
+
+if (number % 3 == 0) {
+  console.log('Buzz')
+}else if(number !== 3) {
+  console.log(let)
+}
